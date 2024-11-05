@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page SPA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="font-sans bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="img/logo.webp" alt="Content Image" class="logo" />
+      </div>
+      <div class="nav-center">
+        <a href="#" class="nav-link" data-target="home">Home</a>
+        <a href="#" class="nav-link" data-target="about">About</a>
+        <a href="#" class="nav-link" data-target="product">Testing Result</a>
+        <a href="#" class="nav-link" data-target="detection">Detection</a>
+      </div>
+      <div class="nav-right">
+        <div class="text-xl font-bold">PALMPILOT</div>
+      </div>
+    </nav>
+
+    <div class="nav-left sideBarButton">
+      <button id="openSidebar" class="text-xl">&#9776;</button>
+    </div>
+
+    <div
+      id="sidebar"
+      class="fixed inset-0 bg-gray-800 bg-opacity-75 hidden z-50 transition-all"
+    >
+      <span class="close-btn">&times;</span>
+      <div class="flex flex-col items-center justify-center h-full text-white">
+        <a href="#" class="mb-4 text-xl" data-target="home">Home</a>
+        <a href="#" class="mb-4 text-xl" data-target="about">About</a>
+        <a href="#" class="mb-4 text-xl" data-target="product"
+          >Testing Result</a
+        >
+        <a href="#" class="mb-4 text-xl" data-target="detection">Detection</a>
+      </div>
+    </div>
+
+    <!-- Hero Sections -->
+    <div class="relative" id="hero-home">
+      <img src="img/Home.png" alt="Hero Image" class="hero-image" />
+      <div class="hero-text">
+        <h1>Welcome to PALMPILOT</h1>
+      </div>
+    </div>
+    <div class="relative" id="hero-about">
+      <img
+        src="img/heroImg-About.webp"
+        alt="About Hero Image"
+        class="hero-image"
+      />
+      <div class="hero-text">
+        <h1>About PALMPILOT</h1>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Home Page -->
+      <section id="home" class="content-section">
+        <div class="content-top">
+          <div class="content-left">
+            <h2>AI-Driven Precision, Nature, and Efficiency</h2>
+            <p>
+              At PalmPilot, we offer a blend of cutting-edge AI technology and
+              unmatched efficiency. Our system is designed to simplify the
+              monitoring and management of palm oil plantations, helping you
+              connect better with data and make informed decisions.
+            </p>
+          </div>
+          <div class="content-right mt-10 DivhomeImg-1">
+            <img
+              src="img/homeImg-1.webp"
+              alt="Content Image"
+              class="home-img-1"
+            />
+          </div>
+        </div>
+        <div class="content-middle">
+          <div class="content-left">
+            <h2>Innovative Technology Design</h2>
+            <p>
+              Our system leverages modern deep learning technology that can
+              quickly and accurately analyze plantation images and data.
+              Experience the ease and accuracy that drives efficiency in every
+              aspect of management.
+            </p>
+          </div>
+          <div class="content-right mt-10 chome-firstIMG">
+            <img
+              src="img/homeImg-2.webp"
+              alt="Content Image"
+              class="home-img-2"
+            />
+          </div>
+        </div>
+        <div class="content-bottom">
+          <div class="content-left chome-scondIMG">
+            <img
+              src="img/homeImg-3.webp"
+              alt="Content Image"
+              class="home-img-3"
+            />
+          </div>
+          <div class="content-left">
+            <h2>User-Friendly & Convenient Technology</h2>
+            <p>
+              Enjoy the ease of monitoring with a user-centric interface,
+              featuring modern tools that simplify data management. Whether for
+              small or large-scale operations, our technology is designed to
+              provide convenience and reliability.
+            </p>
+          </div>
+        </div>
+        <div class="content-extra">
+          <div class="content-center mx-auto text-center">
+            <h2>Advanced Solutions for Plantation Management</h2>
+            <p>
+              From scanning to analysis, we provide everything you need for
+              better management. Our technology delivers the accurate data
+              required to make informed and strategic decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Content Section -->
+      <section id="about" class="content-section">
+        <div class="about-content">
+          <div class="content-top">
+            <div class="content-left">
+              <h2>About PalmPilot</h2>
+              <p>
+                PalmPilot is an AI-based solution specifically designed to
+                simplify the management of palm oil plantations. Utilizing
+                modern deep learning technology, PalmPilot provides accurate and
+                efficient data analysis, enabling farmers and plantation
+                managers to monitor their crops more easily and make
+                well-informed decisions based on comprehensive data.
+              </p>
+            </div>
+            <div class="content-right mt-10 chome-firstIMG">
+              <img
+                src="img/aboutImg-1.webp"
+                alt="Living Rooms Image"
+                class="about-image-1"
+              />
+            </div>
+          </div>
+          <div class="content-middle">
+            <div class="content-right mt-10 chome-firstIMG">
+              <img
+                src="img/aboutImg-2.webp"
+                alt="Kitchen Image"
+                class="about-image-2"
+              />
+            </div>
+            <div class="content-left">
+              <h2>Why Choose PalmPilot?</h2>
+              <p>
+                PalmPilot offers high accuracy by utilizing deep learning
+                technology that can recognize patterns and detect issues faster
+                and more precisely than traditional methods. Its simple and
+                intuitive interface ensures that users from diverse backgrounds
+                can easily access and understand the data, making the monitoring
+                process straightforward and efficient. By automating monitoring
+                and analysis, PalmPilot saves time and costs, allowing users to
+                focus on strategic decision-making. Additionally, our dedicated
+                team provides continuous support and maintenance, ensuring that
+                the system operates smoothly at all times.
+              </p>
+            </div>
+          </div>
+          <div class="content-bottom">
+            <div class="content-left">
+              <h2>The Technology Behind PalmPilot</h2>
+              <p>
+                PalmPilot uses deep learning algorithms that continuously learn
+                from the latest data to improve prediction and analysis
+                accuracy. This technology can quickly recognize and process
+                image data, delivering results that can be immediately utilized
+                for decision-making.
+              </p>
+            </div>
+            <div class="content-left chome-firstIMG">
+              <img
+                src="img/aboutImg-3.webp"
+                alt="Bedrooms Image"
+                class="about-image-3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Page -->
+      <section id="product" class="content-section product-section">
+        <h2 class="text-3xl font-bold mb-12 text-center">Testing Result</h2>
+        <div class="product-gallery">
+          <div class="product-card" onclick="openModal('img/image-5.jpg')">
+            <img src="img/image-5.jpg" alt="Product 1" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-6.jpg')">
+            <img src="img/image-6.jpg" alt="Product 2" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-7.jpg')">
+            <img src="img/image-7.jpg" alt="Product 3" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-8.jpg')">
+            <img src="img/image-8.jpg" alt="Product 4" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-9.jpg')">
+            <img src="img/image-9.jpg" alt="Product 5" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-10.jpg')">
+            <img src="img/image-10.jpg" alt="Product 6" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-11.jpg')">
+            <img src="img/image-11.jpg" alt="Product 7" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-12.jpg')">
+            <img src="img/image-12.jpg" alt="Product 8" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+          <div class="product-card" onclick="openModal('img/image-13.jpg')">
+            <img src="img/image-13.jpg" alt="Product 9" />
+            <div class="overlay">
+              <span>View</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" />
+        <div id="caption"></div>
+      </div>
+      <!-- ----------------------------------------------------------- -->
+
+      <!-- Detection Page -->
+      <section id="detection" class="content-section">
+        <h2 class="text-3xl font-bold mb-12 text-center">Detection</h2>
+
+        <div class="fileZone">
+          <!-- Kotak Upload Gambar -->
+          <label
+            for="file-input"
+            class="upload-area flex flex-col items-center justify-center p-4 border border-dashed rounded"
+          >
+            <div id="spinLoading"></div>
+
+            <div class="upload-content" id="upload-content-zone">
+              <!-- Placeholder akan diganti dengan informasi file dan tombol -->
+              <div class="upload-placeholder">
+                <svg
+                  class="mx-auto h-12 w-12 text-gray-400"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 48 48"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M28 8h14a2 2 0 012 2v28a2 2 0 01-2 2H6a2 2 0 01-2-2V10a2 2 0 012-2h14m4-2v16m0-16L16 16m8-8l8 8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>or drag and drop</p>
+                <p>PNG, JPG, GIF up to 10MB</p>
+              </div>
+              <!-- Div untuk menampilkan informasi jumlah file dan tombol "Hasil" -->
+              <div
+                class="upload-info hidden flex-col items-center justify-center"
+              >
+                <div class="file-count"></div>
+                <button
+                  type="button"
+                  id="result-button"
+                  class="text-sm text-gray-600 font-medium mt-2 text-xl button-hasil"
+                >
+                  Show Result
+                </button>
+              </div>
+            </div>
+          </label>
+          <input
+            type="file"
+            id="file-input"
+            multiple
+            class="hidden"
+            accept="image/*"
+          />
+        </div>
+
+        <div
+          class="result-process flex flex-col gap-3 items-center justify-center flex-wrap"
+        ></div>
+      </section>
+
+      <!-- ------------------------------------------------------------------------------ -->
+
+      <!-- Footer -->
+      <footer id="footer" class="footer mt-8 hidden">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>
+              500 Terry Francine Street,<br />
+              San Francisco, CA 94158
+            </p>
+            <p>
+              Email:
+              <a href="mailto:info@mysite.com" style="color: #007bff"
+                >info@mysite.com</a
+              >
+            </p>
+            <p>
+              Tel:
+              <a href="tel:123-456-7890" style="color: #007bff">123-456-7890</a>
+            </p>
+          </div>
+          <div class="footer-column img-logo-footer">
+            <img src="img/logo.webp" alt="Content Image" class="logo-footer" />
+          </div>
+          <div class="footer-column">
+            <h3>Socials</h3>
+            <div class="social-links">
+              <a href="#" class="mr-2"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="mr-2"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="mr-2"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container pt-10 pb-20">
+          <div style="max-width: 800px; margin: 0 auto; text-align: center">
+            <h3 style="color: white; font-size: 1.75rem; font-weight: bold">
+              Our Location
+            </h3>
+            <p style="color: #ccc; margin-bottom: 20px">
+              Find us at the heart of San Francisco.
+            </p>
+            <div class="iFrameL">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093686!2d-122.42129268531798!3d37.77492927975845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b6b2bb8c1%3A0x1fbd2c7a57f59b7e!2s500%20Terry%20Francine%20St%2C%20San%20Francisco%2C%20CA%2094158!5e0!3m2!1sen!2sus!4v1647396187323!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom mt-6">
+          &copy; 2024 PALMPILOT. All rights reserved.
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
+    <script src="script/main_script.js"></script>
+  </body>
+</html>
